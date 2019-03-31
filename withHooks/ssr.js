@@ -18,6 +18,10 @@ const nodeRenderConfig = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
   },
+  externals: {
+    react: "react",
+    "react-dom": "react-dom"
+  },
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname),
